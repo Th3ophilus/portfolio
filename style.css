@@ -1,0 +1,593 @@
+@font-face {
+    font-family:lora ;
+    src: url(./fonts/lora/Lora-Regular.ttf);
+}
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    padding: 0px;
+margin: 0px;
+scroll-behavior: smooth;
+}
+.header{
+   background:  linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('./images/dark-header-image.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.logo-and-nav-bar{
+ margin-left: 20%;
+}
+
+.logo{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    background-color: black;
+    width: 200px;
+    justify-content: center;
+    z-index: 3;
+   
+}
+
+#toggler-nav{
+    color: #378eec;
+}
+
+
+.toggler-menu{
+    float: left;
+    width: 40px;
+    margin-left: 20px;
+   
+    position: relative;
+    align-items: center;
+    cursor: pointer;
+    
+}
+.toggler-menu:hover{
+    color:#378eec ;
+
+}
+.nav-bar{
+display: flex;
+flex-direction: column;
+color: white;
+background-color: black;
+width: 200px;
+height: 250px;
+align-items: flex-start;
+position: fixed;
+top: -100%;
+z-index: 2;
+transition: 1s ease-out;
+}
+
+
+.nav-bar.showNav{
+    padding-top: 20px;
+    top: 70px;
+    transition: 0.8s;
+}
+
+
+.nav-bar a{
+    color: white;
+     text-decoration: none;
+    padding-left: 60px;
+     font-family: 'Poppins', sans-serif;
+   line-height: 3rem;
+    
+
+}
+
+.nav-bar a:hover{
+    position: relative;
+    color:#378eec ;
+    left: 20px;
+    transition: 0.6s;
+}
+
+.texts{
+    width: 90%;
+    text-align: center;
+    padding: 5%;
+    margin: 0 auto;
+    padding-top: 13%;
+}
+.texts h2{
+    color:#378eec ;
+    font-family: 'Poppins', sans-serif;
+    font-size: 19px;
+    line-height: 1.565;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    animation-name: fade-in;
+    animation-duration: 2s;
+}
+.texts h1{
+    color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+    font-size: 67px;
+    line-height: 1.071;
+    max-width: 900px;
+    margin-top: 0;
+    margin-bottom: 0.6rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-shadow: 0 0 20px rgb(0 0 0 / 50%);
+
+    animation-name: slide-in;
+    animation-duration: 0.5s;
+    position: relative;
+
+}
+.texts h4{
+    font-family: 'lora', sans-serif;
+    opacity: 0.5;
+    font-size: 1.7rem;
+    line-height: 2.4rem;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    color: #FFFFFF;
+    text-shadow: 0 0 6px rgb(0 0 0 / 20%);
+}
+.button1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-color: rgba(255, 255, 255, 0.3);
+    height: 3rem ;
+    line-height: 2.4rem ;
+    margin-top: 0.6rem;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: .25rem;
+    border: 1px solid;
+    width: 200px;
+    border: 1px solid  rgba(255, 255, 255, 0.3);
+    margin: 0 auto;
+}
+
+.texts a{
+    text-decoration: none;
+    color: white;
+}
+
+.button1:hover{
+    border: 2px solid #378eec;
+   transition: 0.1s;
+}
+
+
+#About{
+    height: 100vh;
+
+}
+
+
+.About-me{
+    color: #378eec;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    margin-bottom: 0.3rem;
+    letter-spacing: .4rem;
+    text-align: center;
+    font-family: 'poppins', serif;
+    
+}
+
+.about-myself{
+    font-family: 'poppins', serif;
+    font-size: 3.6rem;
+    color: #313131;
+    line-height: 1.25;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.skills-title{
+    font-family: 'poppins', serif;
+    font-size: 1.6rem;
+    color: #378eec;
+    text-align: center;
+}
+
+.text-about-me{
+    text-align: center;
+    font-size: 20px;
+    opacity: 0.7;
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+.skills{
+    display: flex;
+  padding: 0% 10% 0 10% ;
+  
+
+}
+
+.skills img{
+    width: 30%;
+    padding: 2%;
+    animation-name: fade-in;
+    animation-duration: 0.7s;
+}
+
+
+
+
+
+
+/* services */
+#services{
+   
+    background:  linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(./images/pexels-anni-roenkae-5278595.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    padding: 5%;
+    margin-top: 30px;
+    scroll-behavior: smooth;
+}
+
+.services-text{
+    color: white;
+    font-family: 'poppins-semibold', serif;
+  
+
+}
+.services-text p{
+    font-family: 'poppins', serif;
+    color: #378eec;
+    font-size: 1.4rem;
+    line-height: 0.875;
+    margin-bottom: 0.3rem;
+    letter-spacing: .3rem;
+    text-align: center;
+    margin-top: 70px;
+}
+.services-text h2{
+    font-family: 'poppins', serif;
+font-size: 3.6rem;
+color: white;
+line-height: 1.25;
+margin-bottom: 1.2rem;
+text-align: center;
+
+}
+.services-text h5{
+    font-family: 'poppins', serif;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    text-align: center;
+opacity: 0.7;
+}
+
+
+
+.services-text h5{
+    line-height: 3rem;
+  
+}
+
+.services-container{
+    padding-top: 2%;
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.services-container h3{
+    font-family: 'poppins', serif;
+    opacity: 0.6;
+
+}
+
+.services-container h2{
+    font-family: 'poppins', serif;
+}
+
+
+
+#contact{
+   background-color:#151515 ;
+   height: 100vh; 
+   padding-top: 10%;
+}
+
+.contact-texts h1{
+    font-family: 'poppins', serif;
+  margin: 0;
+    color: #378eec;
+text-align: center;
+font-size: 1.6rem;
+    line-height: 1.875;
+    margin-bottom: 0.3rem;
+    letter-spacing: .4rem;
+}
+.contact-texts h2{
+    margin-top: 10px;
+    text-align: center;
+    font-family: 'poppins', serif;
+    font-size: 3.6rem;
+    color: white;
+    line-height: 1.25;
+    margin-bottom: 1.2rem;
+}
+.contact-texts h5{
+    color: white;
+    font-family: 'poppins', serif;
+    font-size: 1.3rem;
+    opacity: 0.5;
+    line-height: 1.8;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.black{
+   background-color: #151515;
+   height: 800px;
+}
+
+
+@media (max-width: 860px) {
+    .texts h2{
+        font-size: 19px;
+    }
+    .texts h1{
+        font-size: 2rem;
+        margin-bottom: 0.6rem;
+      
+    }.texts h4{
+        font-size: 15px;
+        padding: 0 0.6rem;
+    }
+
+    .texts{
+        padding-top: 50%;
+    }
+
+    #About{
+        padding-top: 20%;
+        margin-bottom: 10px;
+        position: relative;
+        height: 40%;
+        scroll-behavior: smooth;
+       
+    }
+
+    .skills{
+        display: block;
+       text-align: center;
+       
+    }
+
+    .skills img{
+        padding: 5%;
+        width: 200px;
+    }
+    #services{
+       position: relative;
+        height: 1300px;
+    
+    }
+
+
+    .services-container{
+        display: block;
+        text-align: center;
+       
+    }
+    
+    
+
+
+ 
+}
+
+@media (max-width:860px) {
+
+
+    #services{
+        height: 1500px;
+        text-align: center;
+    }
+
+    .services-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+
+
+    .services-content{
+        font-size: 13px;
+        padding: 10px;
+    }
+
+    #contact{
+        height: 1100px;
+        
+    }
+
+    .footer{
+
+        height: 1000px;
+       
+        display: block;
+        flex-direction: column;
+       align-items: center;
+       margin-top: -300px;
+       
+
+    }
+
+    .footer-containers{
+        padding: 5%;
+    }
+
+}
+
+
+
+
+.copywright{
+    color: white;
+    opacity: 0.5;
+    text-align: center;
+   
+}
+
+
+#copywright{
+    background-color: #151515;
+    margin-top: 0;
+    padding: 0;
+    color: white;
+   
+}
+
+
+.services-content{
+    text-align: center;
+    width: 30%;
+    color: white;
+}
+
+
+#icons{
+    color: #378eec;
+}
+
+
+/* keyframes for animations */
+
+@keyframes slide-in{
+    from{right: -100%; transition: 0.2s;}
+    to{right: 0;}
+}
+
+
+@keyframes fade-in{
+  0%{opacity: 0;}
+  50%{opacity: 0,5;}
+  100%{opacity: 1;}
+}
+
+
+/* contact form styles */
+.contact-form{
+    width: 30%;
+    margin: 0 auto;
+    
+}
+
+.contact-form input{
+    width: 100%;
+   height: 40px;
+   margin: 2% auto;
+   font-size: 15px;
+   
+}
+
+input[type= text]{
+    border: 0;
+   
+    background-color: #151515;
+  
+}
+
+input[type= text]:focus{
+    outline: none;
+    border-bottom: 1px solid#378eec ;
+}
+
+textarea{
+    width: 100%;
+    background-color: #151515;
+    color: white;
+    margin-top: 2%;
+   font-size: 15px;
+   border: 0;
+   height: 100px;
+  
+}
+
+textarea:focus{
+    border-bottom: 1px solid #378eec;
+    outline: none;
+    
+}
+
+.form-button{
+    display: flex;
+    justify-content: center;
+
+    
+    
+    display: block;
+    height: 60px;
+   cursor: pointer;
+    width: 100%;
+    background: #378eec;
+    color: #FFFFFF;
+    margin-top: 5%;
+}
+
+.form-button:hover{
+    background-color: #0d6bcf;
+}
+
+.form-button h4{
+    
+    font-family: 'poppins', serif;
+    margin: 0 auto;
+}
+
+
+#footer{
+    background: #151515;
+}
+
+.footer{
+    display: flex;
+  
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 7%;
+    font-family: 'poppins', serif;
+    margin-top: -260px;
+    
+}
+
+.footer-containers{
+    width: 40%;
+    padding: 3%;
+    text-align: center;
+    color: white;
+}
+
+.footer-containers h3{
+    color: #378eec;
+}
+
+#contact-icons{
+   color: white;
+}
